@@ -5,50 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BELAJAR TABEL HTML5</title>
     <style>
+        /* Style umum */
         body {
-            background-color: #f0f8ff; /* Soft light blue */
+            background-color: #f4f4f9; /* Latar belakang netral */
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
         }
+
+        /* Header */
         header {
-            background-color: #0073e6; /* Darker blue */
+            background-color: #0073e6; /* Soft blue */
             color: white;
-            padding: 10px 0;
+            padding: 20px;
             text-align: center;
             position: relative;
         }
+
+        /* Logo */
         .logo {
             position: absolute;
             left: 20px;
             top: 10px;
         }
+
         .logo img {
-            width: 60px;
+            width: 100px; /* Ukuran logo lebih besar */
             height: auto;
         }
+
+        /* Judul dan marquee */
         h1 {
             font-size: 24px;
             margin: 0;
         }
+
         marquee {
             font-size: 20px;
             color: #ffcc00; /* Golden yellow */
         }
+
         h2 {
             font-size: 16px;
-            color: #ffcc00;
+            color: #ffffff; /* Warna teks diganti menjadi putih */
             margin-top: 5px;
             font-weight: normal;
         }
+
         hr {
             border: 1px solid #ffffff;
             width: 80%;
             margin: 20px auto;
         }
+
+        /* Bagian konten */
         .content {
             padding: 20px;
         }
+
         .student-info {
             list-style: none;
             padding: 0;
@@ -58,44 +72,77 @@
             font-size: 18px;
             color: #333;
         }
+
         .student-info li {
             margin-bottom: 10px;
         }
+
         .student-info li.underline {
             text-decoration: underline;
         }
+
+        /* Tabel */
         table {
-            width: 80%;
+            width: 90%;
             margin: 20px auto;
             border-collapse: collapse;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         th, td {
             padding: 12px;
             text-align: center;
+            font-size: 16px;
         }
+
         th {
             background-color: #0073e6;
             color: white;
-            font-size: 18px;
         }
+
         td {
             background-color: #ffffff;
             color: #333;
-            font-size: 16px;
         }
+
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+
+        /* Responsif: Menyesuaikan untuk layar kecil */
+        @media (max-width: 600px) {
+            header {
+                padding: 10px;
+            }
+
+            .logo img {
+                width: 80px; /* Ukuran logo lebih kecil di mobile */
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            table, th, td {
+                font-size: 14px;
+            }
+
+            .student-info {
+                font-size: 16px;
+            }
+        }
+
+        /* Footer */
         footer {
             background-color: #333;
             color: white;
             padding: 10px 0;
+            text-align: center;
             position: relative;
             bottom: 0;
             width: 100%;
-            text-align: center;
         }
+
         footer p {
             margin: 0;
             font-size: 14px;
@@ -117,11 +164,11 @@
 <div class="content">
     <ul class="student-info">
         <li class="underline"><strong>Identitas Mahasiswa:</strong></li>
-        <li>NPM: </li>
-        <li>Nama: </li>
-        <li>Kelas: </li>
+        <li>NPM     : </li>
+        <li>Nama    : </li>
+        <li>Kelas   : </li>
         <li>Semester: </li>
-        <li>Prodi: </li>
+        <li>Prodi   : </li>
     </ul>
 
     <table border="1">
